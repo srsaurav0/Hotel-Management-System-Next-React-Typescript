@@ -10,10 +10,9 @@ interface ImageGalleryProps {
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images, totalImageCount }) => {
   const router = useRouter();
-
-  // Get main image and next 4 images for the 2x2 grid
+  
   const mainImage = images[0] ? `${images[0]}` : null;
-  const rightGridImages = images.slice(1, 5).map(image => `${image}`);
+  const sideImages = images.slice(1, 4).map(image => `${image}`);
 
   const handleImageCountButtonClick = () => {
     console.log('Image count button clicked');
@@ -21,25 +20,25 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, totalImageCount }) 
   };
 
   return (
-    <div className="custom-grid">
-      {/* Left Image */}
-      <div className="left-image">
+    <div className="gallery">
+      <div className="gallery-main">
         {mainImage ? (
           <Image src={mainImage} alt="Main image" width={600} height={400} />
         ) : (
           <p>No main image available</p>
         )}
       </div>
-
-      {/* Right 2x2 Grid of Images */}
-      <div className="right-grid">
-        {rightGridImages.map((image, index) => (
+      <div className="gallery-side">
+        {sideImages.map((image, index) => (
           image ? (
-            <Image key={index} src={image} alt={`Grid image ${index + 1}`} width={200} height={150} />
+            <Image key={index} src={image} alt={`Side image ${index + 1}`} width={200} height={150} />
           ) : null
         ))}
-        {totalImageCount > 5 && (
+        {totalImageCount > 4 && (
           <div className="gallery-image-container">
+            {images[4] ? (
+              <Image src={`${images[4]}`} alt="Extra image" width={200} height={150} />
+            ) : null}
             <a onClick={handleImageCountButtonClick} className="image-count-btn">
               <span className="gallery-icon">📸</span>
               <span className="image-count">{totalImageCount}</span>
