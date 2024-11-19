@@ -1,17 +1,19 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  preset: 'ts-jest',
+  preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.tsx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   transformIgnorePatterns: ['/node_modules/'],
   collectCoverage: true,
   coverageDirectory: 'coverage',
+  moduleNameMapper: {
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy', // Mock CSS imports
+  },
   collectCoverageFrom: [
-    'src/**/*.{ts,tsx,js,jsx}', // Adjust path to match your project structure
-    '!src/**/*.d.ts', // Exclude type definition files
-    '!**/node_modules/**',
+    "components/**/*.tsx",
+    "pages/**/*.tsx"
   ],
 };

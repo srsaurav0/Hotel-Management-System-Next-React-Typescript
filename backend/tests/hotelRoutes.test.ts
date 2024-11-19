@@ -12,7 +12,7 @@ describe('Hotel API Endpoints', () => {
   // GET /hotel/:id - Retrieve a single hotel
   describe('GET /hotel/:id', () => {
     it('should return the details of a single hotel when given a valid ID', async () => {
-      const response = await request(app).get('/hotel/1732008598364'); // Replace with an actual valid ID
+      const response = await request(app).get('/hotel/1732008565459'); // Replace with an actual valid ID
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty('id');
       expect(response.body).toHaveProperty('title');
@@ -76,7 +76,7 @@ describe('Hotel API Endpoints', () => {
   // PUT /hotel/:id - Update an existing hotel
   describe('PUT /hotel/:id', () => {
     it('should update an existing hotel', async () => {
-      const hotelId = '1732008598364'; // Replace with an actual existing ID
+      const hotelId = '1732008565459'; // Replace with an actual existing ID
       const updateData = {
         title: 'Updated Test Hotel',
         description: 'Updated description',
@@ -109,7 +109,7 @@ describe('Hotel API Endpoints', () => {
   // POST /hotel/:id/rooms - Add a new room to a hotel
   describe('POST /hotel/:id/rooms', () => {
     it('should add a room to an existing hotel', async () => {
-      const hotelId = '1732008598364'; // Replace with an actual existing ID
+      const hotelId = '1732008565459'; // Replace with an actual existing ID
       const newRoom = {
         roomSlug: 'test-room',
         roomTitle: 'Test Room',

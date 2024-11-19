@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../components/PropertyDetails.css'; // Adjust path as necessary
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../components/PropertyDetails.css';
 
 const FAQ: React.FC = () => {
   return (

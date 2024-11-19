@@ -36,7 +36,7 @@ const HotelPage: React.FC<HotelProps> = ({ hotelData }) => {
     const reviewsCount = 24; // Placeholder for number of reviews
     const size = '1155 sq ft'; // Placeholder for size, adjust as needed
 
-    console.log('title:', title, 'Desc:', description, 'Rating:', rating, 'Reviews:', reviewsCount, 'Bedrooms:', bedrooms, 'Bathrooms:', bathrooms, 'Sleeps:', sleeps, 'Size:', size, 'Address:', address, images, 'Amenities:', amenities, 'Rooms:', rooms);
+    // console.log('title:', title, 'Desc:', description, 'Rating:', rating, 'Reviews:', reviewsCount, 'Bedrooms:', bedrooms, 'Bathrooms:', bathrooms, 'Sleeps:', sleeps, 'Size:', size, 'Address:', address, images, 'Amenities:', amenities, 'Rooms:', rooms);
 
     return (
         <div>
@@ -74,7 +74,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     try {
         const data = fs.readFileSync(filePath, 'utf-8');
         const hotelData: Hotel = JSON.parse(data);
-        console.log(hotelData);
+        console.log('HotelData successfully parsed');
         return {
             props: {
                 hotelData,
