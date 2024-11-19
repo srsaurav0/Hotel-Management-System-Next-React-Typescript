@@ -1,0 +1,22 @@
+{
+  "title": "Test Hotel",
+  "description": "A description for a test hotel",
+  "guestCount": 4,
+  "bedroomCount": 2,
+  "bathroomCount": 1,
+  "amenities": [
+    "WiFi",
+    "Parking"
+  ],
+  "hostInformation": {
+    "name": "John Doe",
+    "contact": "john.doe@example.com"
+  },
+  "address": "123 Test Street, Test City",
+  "latitude": 40.7128,
+  "longitude": -74.006,
+  "images": [],
+  "rooms": [],
+  "slug": "test-hotel",
+  "id": "1732020326957"
+}
