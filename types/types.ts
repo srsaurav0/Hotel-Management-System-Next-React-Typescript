@@ -1,3 +1,4 @@
+//types.ts
 export interface Room {
     hotelSlug: string;
     roomSlug: string;

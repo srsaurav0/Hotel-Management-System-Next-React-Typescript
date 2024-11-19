@@ -1,0 +1,61 @@
+{
+  "title": "Forest Haven",
+  "description": "A serene escape amidst lush forests, perfect for nature lovers.",
+  "guestCount": 7,
+  "bedroomCount": 3,
+  "bathroomCount": 2,
+  "amenities": [
+    "Hiking Trails",
+    "Forest View",
+    "Fire Pit",
+    "Wi-Fi",
+    "Hot Tub",
+    "BBQ Area"
+  ],
+  "hostInformation": {
+    "name": "Laura Green",
+    "contact": "laura.green@example.com"
+  },
+  "address": "321 Forest Lane, Pine Woods",
+  "latitude": 45.5122,
+  "longitude": -122.6587,
+  "rooms": [
+    {
+      "hotelSlug": "forest-haven",
+      "roomSlug": "treehouse-suite",
+      "roomImage": "/data/images/treehouse-suite.jpg",
+      "roomTitle": "Treehouse Suite",
+      "bedroomCount": 2
+    },
+    {
+      "hotelSlug": "forest-haven",
+      "roomSlug": "pine-cabin",
+      "roomImage": "/data/images/pine-cabin.jpg",
+      "roomTitle": "Pine Cabin",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "forest-haven",
+      "roomSlug": "birch-retreat",
+      "roomImage": "/data/images/birch-retreat.jpg",
+      "roomTitle": "Birch Retreat",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "forest-haven",
+      "roomSlug": "woodland-bungalow",
+      "roomImage": "/data/images/woodland-bungalow.jpg",
+      "roomTitle": "Woodland Bungalow",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "forest-haven",
+      "roomSlug": "sunrise-cottage",
+      "roomImage": "/data/images/sunrise-cottage.jpg",
+      "roomTitle": "Sunrise Cottage",
+      "bedroomCount": 2
+    }
+  ],
+  "slug": "forest-haven",
+  "id": "1732008547308"
+}

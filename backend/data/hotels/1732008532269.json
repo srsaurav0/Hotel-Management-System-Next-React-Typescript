@@ -1,0 +1,61 @@
+{
+  "title": "Urban Chic",
+  "description": "A stylish hotel in the heart of the city with modern facilities.",
+  "guestCount": 10,
+  "bedroomCount": 5,
+  "bathroomCount": 4,
+  "amenities": [
+    "Rooftop Bar",
+    "City View",
+    "Gym",
+    "Concierge Service",
+    "Wi-Fi",
+    "Conference Rooms"
+  ],
+  "hostInformation": {
+    "name": "Michael Lee",
+    "contact": "michael.lee@example.com"
+  },
+  "address": "123 Main Street, Downtown",
+  "latitude": 40.7128,
+  "longitude": -74.006,
+  "rooms": [
+    {
+      "hotelSlug": "urban-chic",
+      "roomSlug": "penthouse-suite",
+      "roomImage": "/data/images/penthouse-suite.jpg",
+      "roomTitle": "Penthouse Suite",
+      "bedroomCount": 2
+    },
+    {
+      "hotelSlug": "urban-chic",
+      "roomSlug": "executive-room",
+      "roomImage": "/data/images/executive-room.jpg",
+      "roomTitle": "Executive Room",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "urban-chic",
+      "roomSlug": "city-loft",
+      "roomImage": "/data/images/city-loft.jpg",
+      "roomTitle": "City Loft",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "urban-chic",
+      "roomSlug": "studio-apartment",
+      "roomImage": "/data/images/studio-apartment.jpg",
+      "roomTitle": "Studio Apartment",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "urban-chic",
+      "roomSlug": "metro-suite",
+      "roomImage": "/data/images/metro-suite.jpg",
+      "roomTitle": "Metro Suite",
+      "bedroomCount": 2
+    }
+  ],
+  "slug": "urban-chic",
+  "id": "1732008532269"
+}

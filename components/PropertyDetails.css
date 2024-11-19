@@ -1,0 +1,1070 @@
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.rating-score {
+    background: #007000;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+
+/* Gemini portion*/
+
+
+
+.text-container {
+    text-align: left;
+}
+
+.entire-home {
+    font-size: 14px;
+    font-weight: bold;
+    color: black; /* Gray color for the "Entire home" text */
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.button-container {
+    margin-top: 1.5rem;
+    display: flex;
+    background-color: #222; /* Dark background color for the button container */
+    padding: 10px 20px;
+    border-radius: 1rem;
+}
+
+.leftsection {
+    flex: 0 0 30%;
+}
+
+.right-section {
+    flex: 1 0 60%;
+}
+
+.member-message {
+    color: #fff; /* White color for the member message */
+    font-size: 20px;
+    text-align: justify;
+    flex: 1;
+}
+
+.sign-in-button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+/* Rating Section*/
+
+.cont {
+    margin: 0 auto;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating .badge {
+    background-color: #006120;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.rating span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.link {
+    color: #007aff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.map-link {
+    color: #007aff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.amenities {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+}
+
+.amenity-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amenity-group i {
+    font-size: 1.2rem;
+}
+
+.map-portion {
+    display: flex; flex-direction: row;
+}
+
+.map {
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #cfcfcf;
+    overflow: hidden;
+    max-width: 40%;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.location-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+
+.more-link {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.more-link a {
+    color: #007aff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+/* Booking portion*/
+
+.booking-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.price, .cancellation, .availability, .dates, .travelers, .total, .note, .property-id {
+    margin-bottom: 10px;
+}
+
+.price span, .cancellation span, .availability span, .dates span, .travelers span, .total span {
+    display: inline-block;
+}
+
+.price span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.availability i {
+    color: green;
+    margin-right: 5px;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dates i {
+    margin-bottom: 5px;
+}
+
+.travelers {
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* .travelers input {
+    margin-left: 10px;
+    width: 40px;
+} */
+
+
+.travelers-selector {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    max-width: 300px;
+    width: 100%;
+    padding: 0;
+}
+
+.travelers-selector:hover {
+    border-color: #B0B0B0;
+}
+
+.travelers-label {
+    font-size: 12px;
+    color: #717171;
+    margin-bottom: 2px;
+}
+
+.travelers-count {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+}
+
+/* Optional: Add focus styles for accessibility */
+.travelers-selector:focus {
+    outline: none;
+    border-color: #008489;
+    box-shadow: 0 0 0 2px rgba(0, 132, 137, 0.2);
+}
+
+/* Ensure the button doesn't have default button styling */
+button.travelers-selector {
+    text-align: left;
+    background: none;
+    border: 1px solid #DDDDDD;
+    padding: 12px 16px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.total span:last-child {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.book-now, .contact-host {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.book-now {
+    background-color: #0062ca;
+    color: #fff;
+}
+
+.contact-host {
+    color: #0062ca;
+}
+
+.note {
+    font-size: 14px;
+    color: #888;
+    display:flex; justify-content: center; align-items: center; margin: 3%;
+}
+
+.property-id {
+    margin-top: 10%;
+    font-size: 14px;
+    color: #000000;
+}
+
+.see-all-reviews {
+    color: #007bff;
+    background-color: white;
+    border-color: #000000;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Date selection */
+
+
+.date-selector {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.date-selector:hover {
+    border-color: #B0B0B0;
+}
+
+.date-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.date-label {
+    font-size: 12px;
+    color: #717171;
+    margin-bottom: 2px;
+}
+
+.date-value {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.calendar-icon {
+    width: 20px;
+    height: 20px;
+    color: #222222;
+}
+
+/* Optional: Add focus styles for accessibility */
+.date-selector:focus {
+    outline: none;
+    border-color: #008489;
+    box-shadow: 0 0 0 2px rgba(0, 132, 137, 0.2);
+}
+
+
+/* Travelers pop-up window */
+
+.travelers-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; /* Hide by default */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 10px;
+}
+
+.close-modal {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.travelers-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.travelers-option label {
+    flex-grow: 1;
+}
+
+.increment, .decrement {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background: #eee;
+}
+
+.count {
+    min-width: 30px;
+    text-align: center;
+}
+
+.age-info {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.pets-checkbox label {
+    margin-left: 5px;
+}
+
+.done-button {
+    padding: 10px 20px;
+    background-color: #0062ca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* Travelers pop-up claude */
+
+.guest-selector {
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: none; /* Hidden by default */
+}
+
+.guest-group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.guest-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    flex: 0 0 30%;
+}
+
+.age-subtitle {
+    font-size: 12px;
+    color: #666;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.counter-value {
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.pet-checkbox {
+    margin-top: 20px;
+}
+
+.pet-checkbox label {
+    font-size: 14px;
+    color: #333;
+    margin-left: 8px;
+}
+
+.done-button {
+    width: 100%;
+    background-color: #0066ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* Rooms & Beds */
+
+.section {
+    max-width: 1500px;
+    margin-top: 2rem;
+}
+
+.bedrooms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bedroom {
+    width: 48%;
+}
+
+.bedroom-title {
+    font-weight: bold;
+    color: #222;
+}
+
+.icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.spaces {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.space-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.hrsection{
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex;
+}
+
+
+
+.property-description {
+    margin-top: 15px;
+}
+
+
+
+/* Amenities at bottom */
+
+.amenities-section {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.amenitiessss {
+    display: flex;
+}
+
+.hrsubsection {
+    display: flex;
+}
+
+.amenity {
+    margin-bottom: 1rem;
+    /* display: flex; */
+}
+
+  
+
+/* Question Section */
+
+.question-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    background-color: #bbc9d4;
+    border-radius: 8px;
+}
+
+.question-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.question-section p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.beta-btn {
+    background-color: #000000;
+    color: white;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: #007aff;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.left-portion-small {
+    flex: 0 0 30%;
+}
+
+
+
+
+/* Damage and incidentals */
+
+.rules, .incidentals, .cancellation {
+    line-height: 1.6;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.cancellation-details {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 5%;
+}
+
+.timeline {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.timeline-2 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.timeline-bar {
+    height: 2px;
+    background-color: #ddd;
+    position: relative;
+    margin: 10px 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marker {
+    height: 10px;
+    width: 10px;
+    background-color: #007aff;
+    border-radius: 50%;
+}
+
+.refund-text {
+    margin-top: 10px;
+}
+
+
+.faq {
+    font-size: 24px;
+    font-weight: bold;
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-item > p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.rating-section {
+    align-items: center;
+    margin: 20px 0;
+}
+.rating-number {
+    font-size: 3rem;
+    color: #00A650;
+    margin-right: 10px;
+}
+.rating-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Reviews */
+
+.reviews, .reviews * {
+    box-sizing: border-box;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures reviews are in a single line on wide screens */
+    gap: 20px;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.review-box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-width: 300px; /* Ensures a minimum width for each box */
+    max-width: 360px; /* Avoids overly wide boxes on larger screens */
+}
+
+.review-rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A650;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.read-more {
+    background: none;
+    color: blue;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    text-decoration: underline;
+}
+
+.review-author {
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+.see-more {
+    text-align: center;
+    margin-top: 20px;
+}
+.see-more a {
+    text-decoration: none;
+    color: #0071eb;
+    font-size: 16px;
+}
+
+
+.contact-host-end {
+    color: #007bff;
+    background-color: white;
+    border-color: #000000;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.s2 {
+    display: flex;
+}
+
+.damage-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex; 
+    align-items: center;
+}
+
+.cancel-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex;
+}
+
+.imp-info-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex;
+}
+
+.faq-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex;
+}
+
+.rating-bottom-section{
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1500px;
+    display: flex;
+}
+
+.about-host {
+    display: flex;
+}
+
+
+.show-more-media{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .map-portion {
+        display: inline;
+    }
+
+    .map {
+        display: inline;
+    }
+
+    .map-link {
+        color: #007aff;
+        margin-top: 5px;
+        margin-bottom: 3%;
+        margin-left: 3%;
+    }
+
+    .about {
+        max-height: 600px;
+        overflow: hidden;
+    }
+
+    
+    .about-content{
+        display: inline;
+    }
+
+    .property-manager {
+        display: none;
+    }
+
+
+    .amenities-section {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+    }
+
+    .amenitiessss {
+        margin-top: 1rem;
+    }
+    
+
+    /* General container styling for mobile */
+    .property-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust image and title layout */
+    .property-image {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .property-title {
+        font-size: 1.4em;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* Adjust icons and text for mobile */
+    .property-amenities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .amenity-item {
+        flex: 1 1 45%;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* Adjust font sizes and padding */
+    .property-rating {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+
+    .property-description {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    /* Hide unnecessary large screen elements */
+    .desktop-only {
+        display: none;
+    }
+
+    /* Add spacing for buttons or icons on mobile */
+    .property-icons {
+        margin-top: 10px;
+    }
+
+    .hrsection {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    .leftsection {
+        display:inline;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        
+    }
+
+    .hrsubsection {
+        margin-top: 10px;
+        display: inline;
+        max-height: 10px;
+        overflow: hidden;
+    }
+
+
+    .damage-section {
+        display: inline;
+    }
+
+    .cancel-section {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+    }
+
+    .imp-info-section {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+    }
+
+    .faq-section {
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+        height: 1rem;
+        overflow-y: hidden;
+    }
+
+    .rating-bottom-section{
+        padding: 20px;
+        margin-bottom: 30px;
+        max-width: 1500px;
+        display: inline;
+    }
+
+    .about-host{
+        display: inline;
+    }
+
+    .show-more-media{
+        display: block;
+    }
+
+    .s2{
+        display: inline;
+    }
+}

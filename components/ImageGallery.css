@@ -1,21 +1,21 @@
 /* Image Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Main image takes more space */
+    grid-template-columns: 2fr 2fr; 
     gap: 0.5rem;
     height: 500px; /* Adjust height as needed */
 }
 
 .gallery-main {
     position: relative;
-    height: 100%;
+    max-height: 500px;
 }
 
 .gallery-main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px 0 0 8px; /* Rounded corners on the left */
+    /* border-radius: 8px 0 0 8px; Rounded corners on the left */
 }
 
 .gallery-side {
@@ -23,7 +23,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-    height: 100%;
+    max-height: 500px;
 }
 
 .gallery-side img {
@@ -36,7 +36,7 @@
 .gallery-image-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    max-height: 250px;
 }
 
 .image-count-btn {
@@ -62,4 +62,47 @@
 .image-count-btn .gallery-icon,
 .image-count-btn .plus-icon {
     font-size: 14px;
+}
+
+
+/* Responsive view for screens with width 480px or less */
+@media (max-width: 480px) {
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        gap: 0.5rem;
+        height: auto;
+        padding: 0.5rem; /* Optional padding for better scroll experience */
+    }
+
+    .gallery-main,
+    .gallery-side {
+        display: inline-block;
+        width: auto;
+        max-width: 80%; /* Adjust based on desired size */
+        flex-shrink: 0; /* Prevent items from shrinking */
+    }
+
+    .gallery-main img,
+    .gallery-side img {
+        width: 100%; /* Ensure images fit within their container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    .gallery-side {
+        grid-template-rows: none;
+        grid-template-columns: none;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        gap: 0.5rem;
+    }
+
+    .image-count-btn {
+        bottom: 5px;
+        right: 5px;
+        font-size: 14px;
+        padding: 2px 6px;
+    }
 }

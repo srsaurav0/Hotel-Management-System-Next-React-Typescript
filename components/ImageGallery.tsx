@@ -10,13 +10,25 @@ interface ImageGalleryProps {
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images, totalImageCount }) => {
   const router = useRouter();
-  
+
   const mainImage = images[0] ? `${images[0]}` : null;
   const sideImages = images.slice(1, 4).map(image => `${image}`);
 
   const handleImageCountButtonClick = () => {
     console.log('Image count button clicked');
-    router.push('/image-details');
+
+    // Prepare image data for query
+    const imageData = images.map((image, index) => ({
+      src: image,
+      alt: `Image ${index + 1}`
+    }));
+
+    router.push({
+      pathname: '/ExpandedImageGallery',
+      query: {
+        images: JSON.stringify(imageData)
+      }
+    });
   };
 
   return (

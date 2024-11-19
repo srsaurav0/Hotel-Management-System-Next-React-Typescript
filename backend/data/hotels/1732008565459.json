@@ -1,0 +1,71 @@
+{
+  "title": "Desert Mirage",
+  "description": "An exotic resort offering luxurious accommodations with desert vistas.",
+  "guestCount": 12,
+  "bedroomCount": 6,
+  "bathroomCount": 5,
+  "amenities": [
+    "Infinity Pool",
+    "Desert View",
+    "Spa",
+    "Fire Pit",
+    "Wi-Fi",
+    "Yoga Studio"
+  ],
+  "hostInformation": {
+    "name": "Amir Khan",
+    "contact": "amir.khan@example.com"
+  },
+  "address": "890 Oasis Road, Desert Edge",
+  "latitude": 33.4484,
+  "longitude": -112.074,
+  "rooms": [
+    {
+      "hotelSlug": "desert-mirage",
+      "roomSlug": "oasis-suite",
+      "roomImage": "/data/images/oasis-suite.jpg",
+      "roomTitle": "Oasis Suite",
+      "bedroomCount": 2
+    },
+    {
+      "hotelSlug": "desert-mirage",
+      "roomSlug": "dune-cottage",
+      "roomImage": "/data/images/dune-cottage.jpg",
+      "roomTitle": "Dune Cottage",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "desert-mirage",
+      "roomSlug": "mirage-loft",
+      "roomImage": "/data/images/mirage-loft.jpg",
+      "roomTitle": "Mirage Loft",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "desert-mirage",
+      "roomSlug": "sahara-villa",
+      "roomImage": "/data/images/sahara-villa.jpg",
+      "roomTitle": "Sahara Villa",
+      "bedroomCount": 2
+    },
+    {
+      "hotelSlug": "desert-mirage",
+      "roomSlug": "sunset-hideaway",
+      "roomImage": "/data/images/sunset-hideaway.jpg",
+      "roomTitle": "Sunset Hideaway",
+      "bedroomCount": 2
+    }
+  ],
+  "slug": "desert-mirage",
+  "id": "1732008565459",
+  "images": [
+    "/data/images/1732008915764-406075933-pexels-christa-grover-977018-2121120.jpg",
+    "/data/images/1732008915812-540499648-pexels-fotoaibe-1643383.jpg",
+    "/data/images/1732008915821-126452065-pexels-pixabay-259580.jpg",
+    "/data/images/1732008915835-673225048-pexels-pixabay-262405.jpg",
+    "/data/images/1732008915855-126273832-pexels-pixabay-275484.jpg",
+    "/data/images/1732008915871-216228095-pexels-pixabay-276554.jpg",
+    "/data/images/1732008915881-815996621-pexels-pixabay-279607.jpg",
+    "/data/images/1732008915889-262998419-pexels-quang-nguyen-vinh-222549-2155202.jpg"
+  ]
+}

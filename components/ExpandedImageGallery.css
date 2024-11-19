@@ -1,0 +1,101 @@
+/* Expanded Gallery */
+
+.gallery-body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1f36;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer-container {
+    position: relative;
+    max-width: 1200px;
+    width: 95%;
+    background-color: #1a1f36;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.close-button {
+    position: relative;
+    background: red;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 8px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    background-color: #000;
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Changed from contain to cover */
+}
+
+.navigation-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.nav-button {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #1a1f36;
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+}
+
+.image-title {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.image-counter {
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}

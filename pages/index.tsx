@@ -6,7 +6,7 @@ import ImageGallery from '../components/ImageGallery';
 const HomePage: React.FC = () => {
     return (
         <div>
-            <Header images={[]} />
+            <Header images={[]} title={''} address={''} />
             <ImageGallery images={[]} totalImageCount={0} />
             {/* <main>
                 <h1>About Us</h1>

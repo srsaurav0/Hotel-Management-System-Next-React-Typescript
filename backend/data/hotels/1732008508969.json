@@ -1,0 +1,61 @@
+{
+  "title": "Seaside Paradise",
+  "description": "A luxurious retreat with stunning ocean views and private beaches.",
+  "guestCount": 8,
+  "bedroomCount": 4,
+  "bathroomCount": 3,
+  "amenities": [
+    "Private Beach",
+    "Ocean View",
+    "Pool",
+    "Spa",
+    "Wi-Fi",
+    "Balcony"
+  ],
+  "hostInformation": {
+    "name": "Samantha Carter",
+    "contact": "samantha.carter@example.com"
+  },
+  "address": "789 Ocean Drive, Coastal Bay",
+  "latitude": 34.0194,
+  "longitude": -118.4912,
+  "rooms": [
+    {
+      "hotelSlug": "seaside-paradise",
+      "roomSlug": "ocean-suite",
+      "roomImage": "/data/images/ocean-suite.jpg",
+      "roomTitle": "Ocean Suite",
+      "bedroomCount": 2
+    },
+    {
+      "hotelSlug": "seaside-paradise",
+      "roomSlug": "sunset-villa",
+      "roomImage": "/data/images/sunset-villa.jpg",
+      "roomTitle": "Sunset Villa",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "seaside-paradise",
+      "roomSlug": "beachfront-cottage",
+      "roomImage": "/data/images/beachfront-cottage.jpg",
+      "roomTitle": "Beachfront Cottage",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "seaside-paradise",
+      "roomSlug": "coral-retreat",
+      "roomImage": "/data/images/coral-retreat.jpg",
+      "roomTitle": "Coral Retreat",
+      "bedroomCount": 1
+    },
+    {
+      "hotelSlug": "seaside-paradise",
+      "roomSlug": "sand-dunes-loft",
+      "roomImage": "/data/images/sand-dunes-loft.jpg",
+      "roomTitle": "Sand Dunes Loft",
+      "bedroomCount": 2
+    }
+  ],
+  "slug": "seaside-paradise",
+  "id": "1732008508969"
+}
