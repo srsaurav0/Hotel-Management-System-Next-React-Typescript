@@ -1,20 +1,52 @@
 import React from 'react';
-import Header from '../components/Header';
-import ImageGallery from '../components/ImageGallery';
-// import Footer from '../components/Footer';
+import { GetServerSideProps } from 'next';
+import path from 'path';
+import fs from 'fs';
+import HotelCard from '../components/HotelCard';
+import { Hotel } from '../types/types';
 
-const HomePage: React.FC = () => {
-    return (
-        <div>
-            <Header images={[]} title={''} address={''} />
-            <ImageGallery images={[]} totalImageCount={0} />
-            {/* <main>
-                <h1>About Us</h1>
-                <p>This is the about page content.</p>
-            </main> */}
-            {/* <Footer /> */}
-        </div>
-    );
+interface HomePageProps {
+  hotels: Hotel[];
+}
+
+const HomePage: React.FC<HomePageProps> = ({ hotels }) => {
+  return (
+    <div className="flex flex-wrap justify-center gap-4">
+      {hotels.map((hotel) => (
+        <HotelCard
+          key={hotel.id}
+          id={hotel.id}
+          slug={hotel.slug || ''}
+          image={hotel.images?.[0] || '/images/h1.png'}
+          title={hotel.title}
+          description={hotel.description.slice(0, 100) + '...'}
+        />
+      ))}
+    </div>
+  );
+};
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const directoryPath = path.join(process.cwd(), 'backend/data/hotels');
+  let hotels: Hotel[] = [];
+
+  try {
+    const files = fs.readdirSync(directoryPath);
+
+    hotels = files.map((file) => {
+      const filePath = path.join(directoryPath, file);
+      const data = fs.readFileSync(filePath, 'utf-8');
+      return JSON.parse(data) as Hotel;
+    });
+  } catch (error) {
+    console.error('Error fetching hotel data:', error);
+  }
+
+  return {
+    props: {
+      hotels,
+    },
+  };
 };
 
 export default HomePage;

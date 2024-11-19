@@ -2,6 +2,7 @@ import '../components/ImageGallery.css';
 import '../components/PropertyDetails.css';
 import '../components/Header.css';
 import '../components/ExpandedImageGallery.css';
+import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import React from 'react';
 

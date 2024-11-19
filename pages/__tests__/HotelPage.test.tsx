@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import HotelPage, { getServerSideProps } from '../../pages/hotels/[hotel-slug]/[hotel-id]';
+import HotelPage, { getServerSideProps } from '../hotel-details/[hotel-slug]/[hotel-id]';
 import { Hotel } from '../../types/types';
 import fs from 'fs';
 import { useRouter } from 'next/router';
