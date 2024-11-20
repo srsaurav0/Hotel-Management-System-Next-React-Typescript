@@ -42,7 +42,7 @@ git clone https://github.com/srsaurav0/NextJs-ReactJs-Final-Assignment.git
 ```bash
 cd NextJs-ReactJs-Final-Assignment
 ```
-### Step 4: Install all the dependencies listed in the `package.json` file and generate an optimized version of the application
+### Step 4: Install all the dependencies listed in the `package.json` file
 ```bash
 npm install
 ```
