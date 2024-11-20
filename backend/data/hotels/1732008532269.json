@@ -57,5 +57,13 @@
     }
   ],
   "slug": "urban-chic",
-  "id": "1732008532269"
+  "id": "1732008532269",
+  "images": [
+    "/data/images/1732076567827-15984014-pexels-alex-qian-1180283-2343466.jpg",
+    "/data/images/1732076567843-818541219-pexels-fotoaibe-1571468.jpg",
+    "/data/images/1732076567856-302351904-pexels-gochrisgoxyz-1648838.jpg",
+    "/data/images/1732076567867-950613074-pexels-pixabay-209266.jpg",
+    "/data/images/1732076567882-750889598-pexels-reneterp-1358900.jpg",
+    "/data/images/1732076567889-890714865-pexels-saviesa-home-1098995-2089696.jpg"
+  ]
 }

@@ -57,5 +57,13 @@
     }
   ],
   "slug": "forest-haven",
-  "id": "1732008547308"
+  "id": "1732008547308",
+  "images": [
+    "/data/images/1732076704821-223603620-pexels-saviesa-home-1098995-2089696.jpg",
+    "/data/images/1732076704823-459749539-pexels-reneterp-1358900.jpg",
+    "/data/images/1732076704826-12718715-pexels-pixabay-209266.jpg",
+    "/data/images/1732076704838-665880783-pexels-gochrisgoxyz-1648838.jpg",
+    "/data/images/1732076704844-277585498-pexels-fotoaibe-1571468.jpg",
+    "/data/images/1732076704849-287507849-pexels-alex-qian-1180283-2343466.jpg"
+  ]
 }
