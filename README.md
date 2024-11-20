@@ -28,33 +28,32 @@ Ensure that the following tools are installed on your system:
 - [Node.js](https://nodejs.org/) (Version 14.x or higher recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js) or [Yarn](https://yarnpkg.com/)
 
-### Step 1: Copy the repository link and clone the repository in the desired directory
+### Step 1: Make sure Node.js is installed
+```bash
+node -v
+npm -v
+```
+### Step 2: Copy the repository link and clone the repository in the desired directory
 ```bash
 git init
 git clone https://github.com/srsaurav0/NextJs-ReactJs-Final-Assignment.git
 ```
-### Step 2: Go to the repository directory
+### Step 3: Go to the repository directory
 ```bash
 cd NextJs-ReactJs-Final-Assignment
 ```
-### Step 3: Install all the dependencies listed in the `package.json` file and generate an optimized version of the application
+### Step 4: Install all the dependencies listed in the `package.json` file and generate an optimized version of the application
 ```bash
 npm install
-npm run build
 ```
-### Step 4: Install Express.js
+### Step 5: Install Express.js
 ```bash
 npm install express
 npm install --save-dev @types/express
 ```
-### Step 5: Install TypeScript and Related Dependencies
+### Step 6: Install TypeScript and Related Dependencies
 ```bash
 npm install typescript ts-node @types/node @types/express --save-dev
-```
-### Step 6: Make sure Node.js is installed
-```bash
-node -v
-npm -v
 ```
 ### Step 7: Install Multer
 ```bash
@@ -64,7 +63,6 @@ npm install --save-dev @types/multer
 ### Step 8: Install Slugify
 ```bash
 npm install slugify
-npm install --save-dev @types/slugify
 ```
 ### Step 9: Install Jest
 ```bash
