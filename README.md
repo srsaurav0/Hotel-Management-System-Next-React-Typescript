@@ -17,7 +17,7 @@ The **NextJs & ReactJs Assignment** focuses on creating, testing, debugging, and
 - **Code Coverage**: Ensures a thorough testing strategy to maintain code quality.
 
 
-## Installation Guide
+## Project Setup Guide
 
 This guide will help you set up the environment in order to run the project.
 
