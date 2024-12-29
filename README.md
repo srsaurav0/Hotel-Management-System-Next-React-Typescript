@@ -35,12 +35,11 @@ npm -v
 ```
 ### Step 2: Copy the repository link and clone the repository in the desired directory
 ```bash
-git init
 git clone https://github.com/srsaurav0/NextJs-ReactJs-Final-Assignment.git
 ```
 ### Step 3: Go to the repository directory
 ```bash
-cd NextJs-ReactJs-Final-Assignment
+cd Hotel-Management-System-Next-React-Typescript
 ```
 ### Step 4: Install all the dependencies listed in the `package.json` file
 ```bash
