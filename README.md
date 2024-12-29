@@ -1,7 +1,9 @@
-# Hotel Management System with Next.js, React.js and Typescript
+# NextStay with Next.js, React.js and Typescript
 
 ## Overview
-The **NextJs & ReactJs Assignment** focuses on creating, testing, debugging, and enhancing React and Next.js components and pages, ensuring a seamless user experience and reliable data handling across the application.
+NextStay is a modern web application designed to streamline the management and presentation of hotel properties. Built with **Next.js**, the project leverages server-side rendering for fast and SEO-friendly performance, along with **Tailwind CSS** for a **responsive and visually appealing design**.
+
+The platform enables hotel managers to showcase their properties with detailed descriptions, images, and amenities, while users can easily browse, explore, and book accommodations. With features like dynamic routing, interactive image galleries, and optimized loading with skeleton screens, NextStay offers a seamless experience for both property owners and travelers.
 
 ## Features
 - **Server-Side Data Fetching**: Utilizes getServerSideProps to fetch hotel data from the backend server or from stored JSON files for server-side rendering.
@@ -35,11 +37,11 @@ npm -v
 ```
 ### Step 2: Copy the repository link and clone the repository in the desired directory
 ```bash
-git clone https://github.com/srsaurav0/NextJs-ReactJs-Final-Assignment.git
+git clone https://github.com/srsaurav0/NextStay-React-Next-Typescript.git
 ```
 ### Step 3: Go to the repository directory
 ```bash
-cd Hotel-Management-System-Next-React-Typescript
+cd NextStay-React-Next-Typescript
 ```
 ### Step 4: Install all the dependencies listed in the `package.json` file
 ```bash
@@ -74,7 +76,7 @@ npm install --save-dev @babel/preset-env @babel/preset-react @babel/preset-types
 
 ## Folder structure:
 ```css
-NextJs-ReactJs-Final-Assignment/
+NextStay-React-Next-Typescript/
 │
 ├── backend/
 │   ├── data/
