@@ -1,4 +1,4 @@
-# Hotel Management System with Next.js and Typescript
+# Hotel Management System with Next.js, React.js and Typescript
 
 ## Overview
 The **NextJs & ReactJs Assignment** focuses on creating, testing, debugging, and enhancing React and Next.js components and pages, ensuring a seamless user experience and reliable data handling across the application.
